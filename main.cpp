@@ -3,8 +3,6 @@
 int main()
 {
     Hospital hospital;
-
     hospital.run();
-
     return 0;
 }

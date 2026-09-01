@@ -6,7 +6,7 @@ Bill::Bill(int bill_id, int patient_id, double doctor_fee, double room_fee, doub
     : BillID(bill_id), PatientID(patient_id), DoctorFee(doctor_fee), RoomFee(room_fee), TreatmentFee(treatment_fee), MedicineFee(medicine_fee), TotalAmount(total_amount)
 {
     CalculateTotalAmount();
-}   
+}
 int Bill::getBillID()
 {
     return BillID;

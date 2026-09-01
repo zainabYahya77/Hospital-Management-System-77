@@ -31,7 +31,7 @@ int Room::getPatientID() const
 bool Room::assignPatient(int patient_id)
 {
     if (Occupied)
-        return false; // Room is already occupied
+        return false;
     Occupied = true;
     PatientID = patient_id;
     return true;
@@ -39,9 +39,9 @@ bool Room::assignPatient(int patient_id)
 bool Room::releasePatient()
 {
     if (!Occupied)
-        return false; // Room is already vacant
+        return false; 
     Occupied = false;
-    PatientID = -1; // Reset patient ID
+    PatientID = -1;
     return true;
 }
 void Room::display()const
