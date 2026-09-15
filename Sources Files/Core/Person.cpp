@@ -1,9 +1,9 @@
 #include "../../Headers Files/Core/Person.h"
 
-Person::Person() : ID(0), Name("NULL")
+Person::Person() : ID(0), Name("")
 {
 }
-Person::Person(int id, string name) : ID(id), Name(name)
+Person::Person(int id, const string& name) : ID(id), Name(name)
 {
 }
 int Person::getId() const
@@ -14,7 +14,7 @@ string Person::getName() const
 {
     return Name;
 }
-void Person::setName(string name)
+void Person::setName(const string& name)
 {
     this->Name = name;
 }
