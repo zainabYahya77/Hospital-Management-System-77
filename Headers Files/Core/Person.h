@@ -15,7 +15,7 @@ public:
     int getId() const;
     string getName() const;
 
-    void setName(string name);
+    void setName(const string& name);
 
     virtual void display() const ;
 
